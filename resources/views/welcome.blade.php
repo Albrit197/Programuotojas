@@ -64,6 +64,15 @@
         </style>
     </head>
     <body>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a href="{{ route('company.index') }}" class="nav-link">Kompanijos</a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('customers.index') }}" class="nav-link">Klientai</a>
+            </li>
+    
+        </ul>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
